@@ -1,6 +1,6 @@
 # 0x01-REST_API
 * This repository contains my simple demonstration of the REST API I built using NodeJS 
-* Endpoints are properly configured to carry out CRUDE operations
+* Endpoints are properly configured to carry out CRUD operations
 
 ## index.js 
 * This is my application's starting point
