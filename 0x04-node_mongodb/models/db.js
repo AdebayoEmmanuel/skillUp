@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://0.0.0.0:27017/StudentDB', {
+mongoose.connect('mongodb+srv://cluster0.tmqoa.mongodb.net/?authSource=%24external&authMechanism=MONGODB-X509&retryWrites=true&w=majority', {
     useNewUrlParser: true
 },
 err => {
