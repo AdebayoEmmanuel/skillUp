@@ -72,14 +72,15 @@ router.get('/:id', (req,res) => {
 });
 
 //delete record by ID
-router.get('/delete/:id', (req, res) => {
+     router.get('/delete/:id', (req, res) => {
     Student.findByIdAndRemove(req.params.id, (err, doc) => {
         if (!err){
-            res.redirect('student/list');
+            res.render('student/list');
         } else {
             console.log('Could not delete student: ' + err);
         }
     });
 });
+
 
 module.exports = router;
