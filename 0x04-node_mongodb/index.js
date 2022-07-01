@@ -41,7 +41,7 @@ app.engine('hbs', exphbs.engine({
 //view engine for handlebar
 app.set('view engine','hbs');
 
-//listen on port 3000
+//listen on port
 app.listen(port, ()=>{
     console.log(`listening on port ${port}`);
 });
