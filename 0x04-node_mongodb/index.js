@@ -1,4 +1,7 @@
 require('./models/db');
+require('dotenv').config(); 
+const port = process.env.PORT || 3000;
+
 
 //global dependencies remember to npm --save all these dependencies
 const express = require('express');
@@ -39,8 +42,8 @@ app.engine('hbs', exphbs.engine({
 app.set('view engine','hbs');
 
 //listen on port 3000
-app.listen(3000, ()=>{
-    console.log('listening on port 3000');
+app.listen(port, ()=>{
+    console.log(`listening on port ${port}`);
 });
 
 app.use("/student", studentController);

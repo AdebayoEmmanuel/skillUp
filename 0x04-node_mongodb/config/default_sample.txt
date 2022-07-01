@@ -1,5 +1,0 @@
-"CONFIG_NAME": 
-"dbConfig": 
-"host": "localhost",
-"port": "YOUR_PORT",
-"dbName": "YOUR_ATLAS_CONNECTION_STRING

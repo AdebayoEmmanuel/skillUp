@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
-const config = require('config');
-const dbConfig = config.get('Student.dbConfig.dbName');
+require('dotenv').config();
 
-mongoose.connect(dbConfig, {
+
+mongoose.connect(process.env.DB_CONN_STR, {
     useNewUrlParser: true
 },
 err => {
