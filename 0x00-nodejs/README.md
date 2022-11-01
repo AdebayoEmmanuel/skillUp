@@ -5,6 +5,7 @@
 ## httpserver
 * Simple httpserver demonstration, configured to listen at port 8080
 * It bears no relevance to the REST of the project, just a side attraction
+* This httpserver finally got a use case today, I used it to coach someone who was having issues setting up a node http server :)
 
 ## Files and directories
 1. Users.js:
