@@ -18,7 +18,7 @@ router.post('/', (req, res) =>{
         updateRecord(req, res);
     }
 });
-
+//function to insert record
 function insertRecord(req, res){
     var student = new Student();
     student.fullName = req.body.fullName;
@@ -45,7 +45,7 @@ updateRecord = (req, res) => {
     });
 };
 
-//render the record
+//render the students record
 router.get('/list', (req, res) => {
     Student.find((err, docs) => {
         if (!err) {
